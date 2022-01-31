@@ -1,0 +1,281 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+- Line heights:
+- Letter spacing:
+
+
+--- 02 COLORS
+- Primary: #0c8599 
+- Tints: 
+- Shades: 
+- Accents: #fcc419
+- Grey: #e9ecef
+
+--- 03 SHADOWS
+
+
+
+--- 04 BORDER-RADIUS
+Default:
+Medium:
+
+
+--- 05 WHITESPACES
+- Spacing systems (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/************************/
+/***** GENERAL STYLE ****/
+/************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px  = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, #06434d, #4b5e61);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #e9ecef;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-container {
+  background-color: #343a40;
+  width: 90%;
+  height: 90%;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  border: 4px solid #e9ecef;
+  overflow: hidden;
+}
+
+.sub-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.right-side-content {
+  max-width: 70%;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
+
+/************************/
+/***** LEFT SIDE *******/
+/************************/
+
+.left-side {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: #55aab8;
+  width: 35%;
+  border-right: 4px solid #e9ecef;
+}
+
+/************************/
+/***** NAVIGATION *******/
+/************************/
+
+.left-header-nav {
+  background-color: #0c8599;
+  width: 100%;
+  height: 7rem;
+  /* height: 10rem; */
+  padding: 2rem 3rem;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #e9ecef;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fcc419;
+}
+
+/************************/
+/***** HERO & FOOTER *******/
+/************************/
+.home-img {
+  width: 20rem;
+  height: 20rem;
+  display: block;
+  margin: 10rem auto 3rem auto;
+  border-radius: 50%;
+  border: 3px solid #e9ecef;
+}
+
+.left-home > h2,
+.left-home > h3 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.right-side {
+  background-color: #55aab8;
+  width: 65%;
+  overflow-y: scroll;
+}
+
+.right-side::-webkit-scrollbar {
+  width: 0;
+}
+
+/************************/
+/***** RIGHT SIDE *******/
+/************************/
+
+/************************/
+/***** ABOUT ME ******/
+/************************/
+
+.right-about {
+  margin-bottom: 3rem;
+}
+.about--text {
+  font-size: 2.4rem;
+  text-indent: 5rem;
+  text-align: justify;
+}
+
+/************************/
+/***** TOOLS *******/
+/************************/
+
+.right-tools {
+  background-color: #3d9dad;
+}
+.tools--text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-indent: 10rem;
+  margin-top: -1.5rem;
+}
+
+.yellow-it {
+  color: #fcc419;
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(4, 7rem);
+  grid-gap: 5rem 8rem;
+  justify-content: center;
+}
+
+.toolstech {
+  width: 10rem;
+  height: 10rem;
+}
+
+.toolstech:hover {
+  color: #0c8599;
+}
+
+.on-learning:hover {
+  color: #fcc419;
+}
+
+/************************/
+/***** PROJECTS *******/
+/************************/
+
+.project-main-title {
+  text-decoration: underline #fcc419;
+}
+
+.tags {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 2px 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 1px rgba(182, 218, 224, 0.5);
+  text-indent: 0;
+  transition: ease-in-out all 0.2s;
+}
+
+.self-made {
+  background-color: #f08c00;
+}
+
+.following-along {
+  background-color: blue;
+}
+
+.following-along:hover,
+.self-made:hover {
+  transform: translateY(-5px);
+}
+
+.project-intro {
+  margin-bottom: 4rem;
+}
+.project {
+  border: 3px solid #e9ecef;
+  border-radius: 2.4rem;
+  padding: 2rem 2.4rem;
+  margin-bottom: 3rem;
+  transition: ease-in all 0.3s;
+}
+
+.project:hover {
+  border: 3px solid #fcc419;
+}
+
+.project:hover .project-title {
+  color: #fcc419;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  transition: ease-in all 0.2s;
+}
+
+.project-image {
+  width: 80%;
+  display: block;
+  margin: 1.6rem auto 2.4rem auto;
+  border-radius: 2.4rem;
+}
+
+.project-desc {
+  font-size: 1.8rem;
+}
