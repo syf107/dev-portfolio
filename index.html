@@ -23,12 +23,12 @@
               <li><a class="nav-link" href="#right-about">Home</a></li>
               <li><a class="nav-link" href="#right-tools"">Tools</a></li>
               <li><a class="nav-link" href="#right-projects">Projects</a></li>
-              <li><a class="nav-link" href="#">Contact</a></li>
+              <li><a class="nav-link" href="#right-contact">Contact</a></li>
             </ul>
           </nav>
         </header>
         <section class="left-home">
-          <img class="home-img" src="images/pasfoto-cropped.JPG" alt="" />
+          <img class="home-img" src="images/pasfoto.png" alt="the user portfolio" />
           <h2>Hi, There. I'm Syarief.</h2>
           <h3>A Software Engineer.</h3>
           <div class="home-link"></div>
@@ -125,7 +125,29 @@
             </section>
           </section>
         </section>
-        <section class="right-contact"></section>
+        <section id="right-contact" class="right-contact">
+          <div class="right-side-content">
+            <h3 class="sub-title contact-main-title">Contact!</h3>
+            <p class="contact-title-desc">(Get in touch with me!)</p>
+            <p class="about--text contact-desc">
+              You can contact me faster through Twitter or Email but feel free to fill this form down below. I'll contact you as soon as possible!</p>
+
+              <form class="contact-form" action="">
+                <div class="contact-form--box">
+                  <label for="name">name:</label>
+                  <input type="text" id="name" placeholder="name" required> 
+                </div>
+               <div class="contact-form--box">
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="email" required>
+               </div>
+               <div class="contact-form--box">
+                <label for="message">message:</label>
+                <textarea id="message" placeholder="put your message here... (optional)"></textarea>
+               </div>
+               
+              </form>
+        </section>
       </main>
     </div>
     <script
