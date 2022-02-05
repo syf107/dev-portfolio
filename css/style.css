@@ -128,7 +128,7 @@ body {
 }
 
 /************************/
-/***** HERO & FOOTER *******/
+/***** HERO & FOOTER ****/
 /************************/
 .home-img {
   width: 20rem;
@@ -153,6 +153,11 @@ body {
 
 .right-side::-webkit-scrollbar {
   width: 0;
+}
+
+/* TYPE-WRITE-EFFECT */
+.txt-type > .txt {
+  border-right: 0.2rem solid #fcc419;
 }
 
 /************************/
