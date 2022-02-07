@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>💻 Syarief Arifin's Portfolio</title>
   </head>
   <body>
     <div class="big-container">
@@ -29,10 +30,16 @@
         </header>
         <section class="left-home">
           <img class="home-img" src="images/pasfoto.png" alt="the user portfolio" />
-          <h2>Hi, folks. I'm Syarief.</h2>
-          <h3 >A <span  class="txt-type" data-wait="3000" data-words='["Software Engineer.", "Front-End Developer.", "Freelance Web Designer."]'> </span></h3>
-          <div class="home-link"></div>
+          <h2 class="home-intro">Hi, folks. I'm Syarief.</h2>
+          <h3 class="home-desc" >A <span  class="txt-type" data-wait="3000" data-words='["Software Engineer.", "Front-End Developer.", "Freelance Web Designer."]'> </span></h3>
+          <div class="home-link">
+            <a class="link--link" href="#"><ion-icon class="link-icon"  name="logo-github"></ion-icon></a>
+            <a class="link--link" href="#"><ion-icon class="link-icon"  name="logo-linkedin"></ion-icon></a>
+            <a class="link--link" href="#"><ion-icon class="link-icon"  name="logo-twitter"></ion-icon></a>
+            <a class="link--link" href="#"><ion-icon  class="link-icon" name="pencil-sharp"></ion-icon></a>
+          </div>
         </section>
+        <footer class="left-footer"><p class="footer-text">Made with 💙 by Syarief Arifin</p></footer>
       </section>
 
       <main class="right-side">
@@ -41,17 +48,9 @@
           <div class="right-side-content">
             <h3 class="sub-title">About <span class="yellow-it">Me!</span></h3>
             <p class="about--text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              commodi sint labore earum! Qui tempore veritatis sequi voluptas
-              tempora debitis hic numquam dicta quos! Assumenda nostrum dolores
-              maxime id amet.Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Minus commodi sint labore earum! Qui tempore veritatis sequi
-              voluptas tempora debitis hic numquam dicta quos! Assumenda nostrum
-              dolores maxime id amet.Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minus commodi sint labore earum! Qui tempore
-              veritatis sequi voluptas tempora debitis hic numquam dicta quos!
-              Assumenda nostrum dolores maxime id amet.
+              Hello! I'm Syarief Arifin, a passionate Software Engineer from Indonesia. In the past, I worked in Bukalapak as a Customer Support and Merchandiser in Blanik, a fashion e-commerce startup. Since I'm a problem solver at heart, I'm challenging myself to switch a career to the tech industry, to polish and apply my problem-solving skill in a life-changing industry. 
             </p>
+            <p class="about--text">I'm currently focused on working with Front-End technologies like HTML, CSS, Sass, JavaScript. And learning React and some Back-End technologies. I'm wide open for a chance to do an internship or freelance work at web design--especially company profile and landing page things.</p>
           </div>
         </section>
 
@@ -64,22 +63,40 @@
               )
             </p>
             <section class="tools-list">
-              <ion-icon class="toolstech" name="logo-html5"></ion-icon>
-              <ion-icon class="toolstech" name="logo-css3"></ion-icon>
-              <ion-icon
-                class="on-learning toolstech"
+              <div class="tools-tech" > 
+                <ion-icon class="tools-icon" name="logo-html5"></ion-icon>
+                <p class="icon-text">HTML</p>
+                </div>
+              <div class="tools-tech"> 
+                <ion-icon class="tools-icon" name="logo-css3"></ion-icon>
+                <p class="icon-text">CSS</p>
+              </div>
+              <div class="tools-tech"> 
+                <ion-icon class="on-learning tools-icon"
                 name="logo-sass"
-              ></ion-icon>
-              <ion-icon class="toolstech" name="logo-javascript"></ion-icon>
-              <ion-icon
-                class="on-learning toolstech"
+                ></ion-icon>
+                <p class="icon-text">SASS</p>
+              </div>
+              <div class="tools-tech" > 
+                <ion-icon class="tools-icon" name="logo-javascript"></ion-icon>
+                <p class="icon-text">JAVASCRIPT</p>
+              </div> 
+              <div class="tools-tech"> 
+                <ion-icon
+                class="on-learning tools-icon"
                 name="logo-react"
-              ></ion-icon>
-              <ion-icon class="toolstech" name="logo-github"></ion-icon>
-              <ion-icon
-                class="on-learning toolstech"
-                name="logo-wordpress"
-              ></ion-icon>
+                ></ion-icon>
+                <p class="icon-text">REACT</p>
+              </div>
+              <div class="tools-tech"> 
+               <ion-icon class="tools-icon" name="logo-github"></ion-icon>
+               <p class="icon-text">GIT & GITHUB</p>
+              </div>
+                
+              <div class="tools-tech"> 
+                <ion-icon class="on-learning tools-icon" name="logo-wordpress"></ion-icon>
+                <p class="icon-text on-learning">WORDPRESS</p>
+              </div>
             </section>
           </div>
         </section>

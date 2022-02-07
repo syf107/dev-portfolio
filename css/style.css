@@ -93,6 +93,7 @@ body {
   background-color: #55aab8;
   width: 35%;
   border-right: 4px solid #e9ecef;
+  position: relative;
 }
 
 /************************/
@@ -139,10 +140,43 @@ body {
   border: 3px solid #e9ecef;
 }
 
-.left-home > h2,
-.left-home > h3 {
+.home-intro,
+.home-desc {
   text-align: center;
   font-size: 2.4rem;
+}
+
+.home-desc {
+  margin-bottom: 1.2rem;
+}
+/* TYPE-WRITE-EFFECT */
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #fcc419;
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.link-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.link--link:link,
+.link--link:visited {
+  color: #0c8599;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.link--link:hover,
+.link--link:active {
+  color: #fcc419;
+  box-shadow: inset 0px 0px 0px 0.2rem #fcc419;
 }
 
 .right-side {
@@ -152,12 +186,13 @@ body {
 }
 
 .right-side::-webkit-scrollbar {
-  width: 0;
+  width: 1em;
 }
-
-/* TYPE-WRITE-EFFECT */
-.txt-type > .txt {
-  border-right: 0.2rem solid #fcc419;
+.right-side::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.right-side::-webkit-scrollbar-thumb {
+  background-color: #0c8599;
 }
 
 /************************/
@@ -172,9 +207,26 @@ body {
   margin-bottom: 3rem;
 }
 .about--text {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  margin-bottom: 2.4rem;
   text-indent: 5rem;
   text-align: justify;
+}
+
+.left-footer {
+  position: absolute;
+  height: 3rem;
+  bottom: 0;
+  background-color: #0c8599;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 
 /************************/
@@ -184,6 +236,7 @@ body {
 .right-tools {
   background-color: #3d9dad;
 }
+
 .tools--text {
   font-size: 2rem;
   font-weight: 700;
@@ -198,22 +251,39 @@ body {
 }
 
 .tools-list {
+  /* margin: 0 auto; */
+  height: 30rem;
+  max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(4, 7rem);
-  grid-gap: 5rem 8rem;
-  justify-content: center;
+
+  grid-template-columns: repeat(4, 14rem);
+  justify-items: center;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-.toolstech {
+.tools-tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tools-icon {
   width: 10rem;
   height: 10rem;
+  margin-bottom: 1.2rem;
 }
 
-.toolstech:hover {
+.tools-icon:hover,
+.tools-icon:hover + .icon-text {
   color: #0c8599;
 }
+.icon-text {
+  font-size: 1.8rem;
+}
 
-.on-learning:hover {
+.on-learning:hover,
+.on-learning:hover + .icon-text {
   color: #fcc419;
 }
 
