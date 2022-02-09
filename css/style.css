@@ -189,7 +189,7 @@ body {
   width: 1em;
 }
 .right-side::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 .right-side::-webkit-scrollbar-thumb {
   background-color: #0c8599;
@@ -204,6 +204,7 @@ body {
 /************************/
 
 .right-about {
+  background-color: #3d9dad;
   margin-bottom: 3rem;
 }
 .about--text {
@@ -233,10 +234,6 @@ body {
 /***** TOOLS *******/
 /************************/
 
-.right-tools {
-  background-color: #3d9dad;
-}
-
 .tools--text {
   font-size: 2rem;
   font-weight: 700;
@@ -260,6 +257,7 @@ body {
   justify-items: center;
   justify-content: space-between;
   align-content: space-between;
+  margin-bottom: 2.4rem;
 }
 
 .tools-tech {
@@ -272,6 +270,7 @@ body {
   width: 10rem;
   height: 10rem;
   margin-bottom: 1.2rem;
+  transition: ease-in all 0.2s;
 }
 
 .tools-icon:hover,
@@ -291,6 +290,10 @@ body {
 /***** PROJECTS *******/
 /************************/
 
+.right-projects {
+  background-color: #3d9dad;
+}
+
 .project-main-title {
   text-decoration: underline #fcc419;
 }
@@ -298,8 +301,8 @@ body {
 .tags {
   display: inline-block;
   font-size: 1.4rem;
-  padding: 2px 3px;
-  border: 1px solid black;
+  padding: 4px 10px;
+  border: 1px solid #333;
   border-radius: 5px;
   box-shadow: 4px 3px 1px rgba(182, 218, 224, 0.5);
   text-indent: 0;
@@ -336,10 +339,6 @@ body {
   border: 3px solid #0c8599;
 }
 
-/* .project:hover .project-title {
-  color: #fcc419;
-} */
-
 .project-title {
   font-size: 2.4rem;
   margin-bottom: 1rem;
@@ -349,16 +348,46 @@ body {
 .project-image {
   width: 80%;
   display: block;
-  margin: 1.6rem auto 2.4rem auto;
-  border-radius: 2.4rem;
+  margin: 1.6rem auto 1rem auto;
+}
+
+.project-link-information {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  vertical-align: center;
+}
+
+.project-repo-link:link,
+.project-repo-link:visited {
+  background-color: #bd5d2d;
+  text-decoration: none;
+  color: #e9ecef;
+  margin-right: 0.5rem;
+}
+
+.project-repo-link:hover,
+.project-repo-link:active {
+  background-color: #e9ecef;
+  color: #bd5d2d;
+}
+
+.project-live-site:link,
+.project-live-site:visited {
+  background-color: #25af48;
+  color: #e9ecef;
+  text-decoration: none;
+}
+.project-live-site:hover,
+.project-live-site:active {
+  background-color: #e9ecef;
+  color: #25af48;
+  text-decoration: none;
 }
 
 .project-desc {
   font-size: 1.8rem;
-}
-
-.right-contact {
-  background-color: #3d9dad;
 }
 
 /************************/
