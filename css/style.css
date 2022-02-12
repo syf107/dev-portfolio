@@ -77,21 +77,13 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.right-side-content {
-  max-width: 70%;
-  padding: 8rem 0;
-  margin: 0 auto;
-}
-
 /************************/
 /***** LEFT SIDE *******/
 /************************/
 
 .left-side {
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
   background-color: #55aab8;
-  width: 35%;
+  flex: 1 1 35%;
   border-right: 4px solid #e9ecef;
   position: relative;
 }
@@ -179,12 +171,6 @@ body {
   box-shadow: inset 0px 0px 0px 0.2rem #fcc419;
 }
 
-.right-side {
-  background-color: #55aab8;
-  width: 65%;
-  overflow-y: scroll;
-}
-
 .right-side::-webkit-scrollbar {
   width: 1em;
 }
@@ -198,6 +184,18 @@ body {
 /************************/
 /***** RIGHT SIDE *******/
 /************************/
+
+.right-side {
+  background-color: #55aab8;
+  flex: 1 1 65%;
+  overflow-y: scroll;
+}
+
+.right-side-content {
+  max-width: 70%;
+  padding: 8rem 0;
+  margin: 0 auto;
+}
 
 /************************/
 /***** ABOUT ME ******/
@@ -249,7 +247,7 @@ body {
 
 .tools-list {
   /* margin: 0 auto; */
-  height: 30rem;
+  height: auto;
   max-width: 90%;
   display: grid;
 
@@ -438,4 +436,54 @@ body {
 .contact-form--box > textarea {
   resize: none;
   height: 12rem;
+}
+
+/* MEDIA QUERY */
+
+/******************************/
+/* BELOW 1200px (Landscape Tables) */
+/******************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9/16 =  0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .right-side-content {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .tools-list {
+    grid-template-columns: repeat(3, 14rem);
+    grid-row-gap: 4rem;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .right-side-content {
+    /* max-width: 90%; */
+  }
+}
+
+@media (max-width: 54em) {
+  .big-container {
+    flex-direction: column;
+    /* padding: 10rem auto; */
+    height: auto;
+  }
+
+  .left-side {
+    height: auto;
+  }
+
+  .right-side {
+    height: auto;
+    overflow-y: none;
+  }
+
+  .right-contact {
+  }
 }
