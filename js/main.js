@@ -68,3 +68,19 @@ function init() {
   //   Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const allNavLinkEl = document.querySelectorAll(".nav-link");
+
+// click give nav open.
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+//  when burger screen clicked, it comes back to normal
+allNavLinkEl.forEach((a) =>
+  a.addEventListener("click", () => {
+    headerEl.classList.remove("nav-open");
+  })
+);
