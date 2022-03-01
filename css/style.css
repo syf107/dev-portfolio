@@ -50,7 +50,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(150deg, #06434d, #4b5e61);
+  background: #0c8599;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #e9ecef;
@@ -61,6 +61,8 @@ body {
 }
 
 .big-container {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   background-color: #343a40;
   width: 90%;
   height: 90%;
@@ -244,9 +246,38 @@ body {
 
 .about--text {
   font-size: 2.2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
   text-indent: 5rem;
   text-align: justify;
+  letter-spacing: 0.4px;
+}
+
+.about--text:last-of-type {
+  padding-bottom: 3rem;
+}
+
+.about--button:link,
+.about--button:visited {
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 0.75rem 2rem;
+  background-color: #0c8599;
+  border: 2px solid #e9ecef;
+  color: #e9ecef;
+  transition: ease-in all 0.3s;
+  display: block;
+  width: 15rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about--button:hover,
+.about--button:active {
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  background-color: #fcc419;
+  color: #0c8599;
+  border: 2px dashed #0c8599;
 }
 
 /************************/
@@ -348,13 +379,18 @@ body {
   border: 3px solid #e9ecef;
   border-radius: 2.4rem;
   padding: 2rem 2.4rem;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 6rem auto;
   transition: ease-in all 0.3s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .project:hover,
 .contact-form:hover {
-  border: 3px solid #0c8599;
+  border: 3px solid #fcc419;
+  box-shadow: rgb(252, 196, 25, 0.4) 5px 5px, rgb(252, 196, 25, 0.3) 10px 10px,
+    rgb(252, 196, 25, 0.2) 15px 15px, rgb(252, 196, 25, 0.1) 20px 20px,
+    rgb(252, 196, 25, 0.05) 25px 25px;
 }
 
 .project-title {
@@ -459,6 +495,23 @@ body {
   height: 12rem;
 }
 
+.contact-submit {
+  width: 10rem;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 1rem 2rem;
+  border: 3px solid #e9ecef;
+  background-color: #0c8599;
+  color: #e9ecef;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: ease-out all 0.2s;
+}
+
+.contact-submit:active {
+  background-color: #55aab8;
+}
+
 /* MEDIA QUERY */
 
 /******************************/
@@ -505,6 +558,7 @@ body {
 
   .big-container {
     flex-direction: column;
+
     /* height: auto; */
     /* padding: 10rem auto; */
     /* height: auto; */
