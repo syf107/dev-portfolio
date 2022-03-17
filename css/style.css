@@ -85,7 +85,7 @@ body {
 
 .left-side {
   background-color: #55aab8;
-  flex: 1 1 35%;
+  flex: 1 1 38rem;
   border-right: 4px solid #e9ecef;
   position: relative;
 }
@@ -97,24 +97,24 @@ body {
 .left-header-nav {
   background-color: #0c8599;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 7rem;
-  /* height: 10rem; */
-  padding: 2rem 3rem;
 }
 
 .nav-list {
   list-style: none;
   font-size: 1.8rem;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .nav-link:link,
 .nav-link:visited {
   color: #e9ecef;
   text-decoration: none;
-  padding: 1rem;
 }
 
 .nav-link:hover,
@@ -144,13 +144,24 @@ body {
 /************************/
 /***** HERO & FOOTER ****/
 /************************/
+
+.left-home {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* align-content: space-around; */
+  /* height: auto; */
+}
 .home-img {
-  width: 20rem;
-  height: 20rem;
+  width: 17rem;
+  height: 17rem;
   display: block;
-  margin: 10rem auto 3rem auto;
   border-radius: 50%;
   border: 3px solid #e9ecef;
+  margin: 1rem 0;
 }
 
 .home-intro,
@@ -160,7 +171,7 @@ body {
 }
 
 .home-desc {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
 }
 /* TYPE-WRITE-EFFECT */
 
@@ -169,28 +180,49 @@ body {
 }
 
 .home-link {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
+  border: 2px solid #e9ecef;
+  border-radius: 0.5rem;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 
 .link-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3rem;
+  background-color: #0c8599;
+  color: #e9ecef;
+  margin-right: 1rem;
 }
 
 .link--link:link,
 .link--link:visited {
-  color: #0c8599;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  /* margin-bottom: 3rem; */
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+.link--link:last-of-type {
+  border-bottom: 0;
 }
 
 .link--link:hover,
-.link--link:active {
+.link--link:active,
+.link--link:hover .link-icon {
   color: #fcc419;
-  box-shadow: inset 0px 0px 0px 0.2rem #fcc419;
+  /* box-shadow: inset 0px 0px 0px 0.3rem #fcc419; */
+  z-index: 100;
+  background-color: #0c8599;
+}
+
+.link--link:hover .link-icon {
+  border-right: 1px solid #e9ecef;
 }
 
 .left-footer {
@@ -250,14 +282,16 @@ body {
   text-indent: 5rem;
   text-align: justify;
   letter-spacing: 0.4px;
+  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
+    transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
 }
 
 .about--text:last-of-type {
   padding-bottom: 3rem;
 }
 
-.about--button:link,
-.about--button:visited {
+.service--button:link,
+.service--button:visited {
   text-decoration: none;
   font-size: 2.2rem;
   padding: 0.75rem 2rem;
@@ -271,16 +305,18 @@ body {
   margin: 0 auto;
 }
 
-.about--button:hover,
-.about--button:active {
+.service--button:hover,
+.service--button:active {
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  width: 20rem;
-  padding: 1.5rem 3rem;
   background-color: #fcc419;
   color: #0c8599;
   border: 3px solid #0c8599;
 }
+
+/************************/
+/******* SERVICES *******/
+/************************/
 
 /************************/
 /***** TOOLS *******/
@@ -389,7 +425,7 @@ body {
 
 .project:hover,
 .contact-form:hover {
-  border: 3px solid #fcc419;
+  border: 10px solid #fcc419;
   box-shadow: rgb(252, 196, 25, 0.4) 5px 5px, rgb(252, 196, 25, 0.3) 10px 10px,
     rgb(252, 196, 25, 0.2) 15px 15px, rgb(252, 196, 25, 0.1) 20px 20px,
     rgb(252, 196, 25, 0.05) 25px 25px;
@@ -451,12 +487,16 @@ body {
 /***** PROJECTS *******/
 /************************/
 
+.contact-main-title:hover + p.contact-title-desc {
+  visibility: visible;
+}
+
 .contact-title-desc {
   font-size: 2rem;
   font-weight: 700;
   margin-top: -1.5rem;
   color: #fcc419;
-  margin-bottom: 3rem;
+  visibility: hidden;
 }
 
 .contact-desc {

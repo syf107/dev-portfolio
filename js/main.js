@@ -1,3 +1,4 @@
+// typeword effect
 class TypeWriter {
   constructor(txtElement, words, wait = 4000) {
     this.txtElement = txtElement;
@@ -69,6 +70,7 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+// creating burger nav
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 const allNavLinkEl = document.querySelectorAll(".nav-link");
