@@ -97,12 +97,22 @@
           <div class="right-side-content">
             <h3 class="sub-title">Tools & Technologies!</h3>
             <p class="tools--text">
-              (I <span class="tool-use">use</span> &
-              <span class="yellow-it">currently learning</span>
+              (I currently <span class="tool-use">use</span> &
+              <span class="yellow-it">learn</span>
               )
             </p>
-            <section class="tools-list">
-              <div class="tools-tech" > 
+            <ul class="tools-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git/Github</li>
+              <li>React</li>
+              <li>TailwindCSS</li>
+              <li class="currently-learn">NextJS</li>
+              <li class="currently-learn">TypeScript</li>
+              <li class="currently-learn">AlpineJS</li>
+              <li class="currently-learn">Liquid</li>
+              <!-- <div class="tools-tech" > 
                 <ion-icon class="tools-icon" name="logo-html5"></ion-icon>
                 <p class="icon-text">HTML</p>
                 </div>
@@ -117,31 +127,21 @@
               <div class="tools-tech"> 
                 <ion-icon class="tools-icon" name="logo-github"></ion-icon>
                 <p class="icon-text">GIT & GITHUB</p>
-              </div>
+              </div> -->
               <!-- <div class="tools-tech"> 
                 <ion-icon class="on-learning tools-icon"
                 name="logo-sass"
                 ></ion-icon>
                 <p class="icon-text">SASS</p>
               </div> -->
-              <div class="tools-tech"> 
+              <!-- <div class="tools-tech"> 
                 <ion-icon
                 class=" tools-icon"
                 name="logo-react"
                 ></ion-icon>
                 <p class="icon-text">REACT</p>
-              </div>
-
-              <div class="tools-tech"> 
-                <ion-icon class="on-learning tools-icon" name="logo-wordpress"></ion-icon>
-                <p class="icon-text on-learning">WORDPRESS</p>
-              </div>
-                
-              <div class="tools-tech"> 
-                <ion-icon class="on-learning tools-icon" name="logo-nodejs"></ion-icon>
-                <p class="icon-text on-learning">NODEJS</p>
-              </div>
-            </section>
+              </div>                 -->
+            </ul>
           </div>
         </section>
     
@@ -150,66 +150,101 @@
           <div class="right-side-content">
             <h3 class="sub-title project-main-title">Projects<span class="yellow-it">!</span></h3>
             <p class="about--text project-intro">
-              Below are the projects I have done in learning web development as a self-learner. There are tags to give the information about the project. They are: <span class="self-made tags">self-made project</span> and <span class="following-along tags">following along project</span> from the course.
+              Below are the projects I have done in learning web development as a self-learner. There are tags to give the information about the project. They are: <span class="personal tags">personal project</span> and <span class="course-project tags">course project</span> from the course.
             </p>
+
+            <!-- HABIT LIST APP PROJECT -->
+            <div class="project">
+              <h3 class="project-title">Habit List App</h3>
+              <span class="personal tags">personal project</span>
+              <div class="project-interface">
+                  <img class="project-image" src="images/habit-list-app-screen.png" alt="cuisine restaurant image project">
+                  <div class="project-link-information"> 
+                   <a class="tags project-repo-link" href="https://github.com/syf107/habit-list-project"   target="_blank">Github Repo</a>
+                   <a class="tags project-live-site" href="https://habit-list-app.netlify.app/" target="_blank">Live Site!</a>
+                  </div>
+
+                  <p class="project-desc">Technology used: HTML, CSS, JavaScript, React, Tailwind CSS</p>
+                  
+                  <p class="project-desc">Habit List App is a personal project that I made because of my process learning from John Smilga's React Course and also reading Atomic Habits by James Clear. In this application, I create a level up version of to-do list app into the Habit List App. The app is very simple and functional to build your own habits! It used React Technologies like Hooks, React Icons, React Router, useReducer and ContextAPI. </p>
+                  <p class="project-desc">The features:</p>
+                  <ul class="project-desc">
+
+                    <li>In the Maker! section, you can create a group of activity and submit it into habit list. There are features to add, delete, edit, and arrange the position of the activity.</li>
+                    <li>After that you can go to the Trainer! section. In this section, you can see the habit list you previously created. You can extend the habit list and go to details to train your habit!</li>
+                    <li>After clicking the details, you can go to each habit list page to train your best to build your habit. First, you can arrange how long will train the habit. Then, you can progress everything with the generated button.</li>
+                    <li>You can search pokemon name by using index or name of the Pokemon</li>
+                  </ul>
+
+              </div>
+          </div>
+
+             <!-- POKEMON API PROJECTS -->
+             <div class="project">
+              <h3 class="project-title">Pokemon Log Details Web API</h3>
+              <span class="personal tags">personal project</span>
+
+              <div class="project-interface">
+                  <img class="project-image" src="images/pokemon-api.png" alt="pokemon api web image project">
+                  <div class="project-link-information"> 
+                    <a class="tags project-repo-link" href="https://github.com/syf107/pokemon-api-project" target="_blank">Github Repo</a>
+                   <a class="tags project-live-site" href="https://pokemon-log-details-api.netlify.app/" target="_blank">Live Site!</a></div>
+
+                   <p class="project-desc">Technology used: HTML, CSS, JavaScript</p>
+                  
+                  <p class="project-desc">Pokemon Log Details API was a project made by optimizing the vast amount of data from PokeAPI. To make the project run smoothly, it used the best practice of Asynchronous JavaScript. I also used my experience playing Pokemon, giving retro taste to design and the best way to show PokeAPI data.</p>
+                  <p class="project-desc">The features:</p>
+                  <ul class="project-desc">
+
+                    <li>Auto-generate the first twenty Pokemon.</li>
+                    <li>When you click the Pokemon box, it will show the pokemon attribute details.</li>
+                    <li>You can click the abilities and moves to give more explanation about it.</li>
+                    <li>You can search pokemon name by using index or name of the Pokemon</li>
+                  </ul>
+
+              </div>
+            </div>
+
 
               <!-- DEV PORTFOLIO PROJECT -->
                 <div class="project">
                     <h3 class="project-title">Dev Portfolio</h3>
-                    <span class="self-made tags">self-made project</span>
+                    <span class="personal tags">personal project</span>
 
                     <div class="project-interface">
                         <img class="project-image" src="images/dev-porto-pic.png" alt="image project">
                         <div class="project-link-information"> 
                           <a class="tags project-repo-link" href="https://github.com/syf107/dev-portfolio" target="_blank">Github Repo</a>
                          <a class="tags project-live-site" href="#" target="_blank">Live Site!</a></div>
-                        <p class="project-desc">Dev Portfolio is coded by HTML, CSS, and JavaScript. It's a simple developer's portfolio website that shows my profile, link, project, contact. It's fully responsive site.</p>
+
+                         <p class="project-desc">Technology used: HTML, CSS, JavaScript</p>
+
+                        <p class="project-desc">Dev Portfolio is the way I showcase what I've been learning so far. It shows my profile, project, contact. It's fully responsive site.</p>
                     </div>
                 </div>
 
                 <!-- RESTAURANT PROJECT -->
                 <div class="project">
                     <h3 class="project-title">Cuisine Restaurant Web Pages</h3>
-                    <span class="self-made tags">self-made project</span>
+                    <span class="personal tags">personal project</span>
                     <div class="project-interface">
                         <img class="project-image" src="images/cuisine-resaturant-pic.png" alt="cuisine restaurant image project">
                         <div class="project-link-information"> 
                          <a class="tags project-repo-link" href="https://github.com/syf107/restaurant-project"   target="_blank">Github Repo</a>
                          <a class="tags project-live-site" href="https://cuisine-restaurant-syf.netlify.app/" target="_blank">Live Site!</a>
                         </div>
+
+                        <p class="project-desc">Technology used: HTML, CSS, JavaScript</p>
                         
                         <p class="project-desc">Cuisine Restaurant Project is one of the HTML & CSS implementation projects from #100Devs Software Engineering Bootcamp. Leon curated the list of the web for us to implement the skill of HTML & CSS and translate the visual picture into code. I used HTML and CSS as the foundation to create the web page and its structure. Then, adding javascript to add the interactivity at some sections is needed. The design itself is from <a href="https://dribbble.com/shots/12927498-Cuisine-Restaurant-Website">Mithun Ray</a>.</p>
                     </div>
                 </div>
 
-                <!-- POKEMON API PROJECTS -->
-                <div class="project">
-                    <h3 class="project-title">Pokemon Log Details Web API</h3>
-                    <span class="self-made tags">self-made project</span>
-
-                    <div class="project-interface">
-                        <img class="project-image" src="images/pokemon-api.png" alt="pokemon api web image project">
-                        <div class="project-link-information"> 
-                          <a class="tags project-repo-link" href="https://github.com/syf107/pokemon-api-project" target="_blank">Github Repo</a>
-                         <a class="tags project-live-site" href="https://pokemon-log-details-api.netlify.app/" target="_blank">Live Site!</a></div>
-                        
-                        <p class="project-desc">Pokemon Log Details API was a project made by optimizing the vast amount of data from PokeAPI. Technologies used in this project are HTML, CSS, and JavaScript. To make the project run smoothly, it used the best practice of Asynchronous JavaScript. I also used my experience playing Pokemon, giving retro taste to design and the best way to show PokeAPI data.</p>
-                        <p class="project-desc">The features:</p>
-                        <ul class="project-desc">
-
-                          <li>Auto-generate the first twenty Pokemon.</li>
-                          <li>When you click the Pokemon box, it will show the pokemon attribute details.</li>
-                          <li>You can click the abilities and moves to give more explanation about it.</li>
-                          <li>You can search pokemon name by using index or name of the Pokemon</li>
-                        </ul>
-
-                    </div>
-                  </div>
-
+               
                   <!-- OMNIFOOD -->
                 <div class="project">
                     <h3 class="project-title">Omnifood</h3>
-                    <span class="following-along tags">following along project</span>
+                    <span class="course-project tags">course project</span>
 
                     <div class="project-interface">
                         <img class="project-image" src="images/omnifood-pic.png" alt="image project">
@@ -217,50 +252,24 @@
                           <a class="tags project-repo-link" href="https://github.com/syf107/jonas-schmedtmann-html-css-course" target="_blank">Github Repo</a>
                          <a class="tags project-live-site" href="https://omnifood-syarief.netlify.app/" target="_blank">Live Site!</a></div>
                         
+                         <p class="project-desc">Technology used: HTML, CSS, JavaScript</p>
+
                         <p class="project-desc">Omnifood is the landing pages website for made-up A.I. Powered personalized healthy foods and diets company. It is the final projects of <a #href="">Jonas Schmedtmann Course</a> that mostly taught HTML & CSS. It applies the good practice of HTML, CSS, Flexbox, Grid layout, UI & UX Design, full Responsive to media, and file optimizations. The website also applies JavaScript for the burger navigation.</p>
                     </div>
                 </div>
 
-                <!-- GUESS MY NUMBER -->
                 
-                    <div class="project">
-                    <h3 class="project-title">Guess My Number</h3>
-                    <span class="following-along tags">following along project</span>
-
-                    <div class="project-interface">
-                        <img class="project-image" src="images/guess-the-number-pic.png" alt="image project">
-                         <div class="project-link-information"> 
-                          <a class="tags project-repo-link" href="https://github.com/syf107/jonas-schmedtmann-javascript-course/tree/main/05-guess-the-number" target="_blank" >Github Repo</a>
-                         <a class="tags project-live-site" href="https://omnifood-syarief.netlify.app/" target="_blank">Live Site!</a></div>
-                        
-                        <p class="project-desc">Guess My Number is the mini-games project from Jonas' Schmedtmann JavaScript course. It's implementing the logic of JavaScript to create an entertaining game where you need to guess the number. If your guess is lower than the random number, it will instruct that it is too low. It also happens when your number is higher. It used HTML, CSS, and JavaScript.</p>
-                    </div>
-                  </div>
 
 
-           <!-- PIG GAME -->
-                   <div class="project">
-                    <h3 class="project-title">Pig Game</h3>
-                    <span class="following-along tags">following along project</span>
-
-                    <div class="project-interface">
-                        <img class="project-image" src="images/pig-game-pic.png" alt="image project" />
-                        <div class="project-link-information"> 
-                          <a class="tags project-repo-link" href="https://github.com/syf107/jonas-schmedtmann-javascript-course/tree/main/07-pig-game-project" target="_blank">Github Repo</a>
-                         <a class="tags project-live-site" href="https://pig-game-syf.netlify.app/" target="_blank">Live Site!</a></div>
-                        
-                        <p class="project-desc">Pig Game is the second mini-project of Jonas Schmedtmann's JavaScript Course. It applies simple DOM implementation and JavaScript logic. The game is about getting as many scores from the dice. Your points are the accumulation of numbers in your turn. If you get the number 1, your points will be gone, and it's the next turn for another player. The key to this game is you don't become greedy and be patient. Tech used in this project is HTML, CSS, and JavaScript.</p>
-                    </div>
-                </div>
                        
           </section>
         <!-- CONTACT -->
-        <section class="right-contact">
+        <section class="right-contact"id="right-contact">
           <div class="right-side-content">
             <h3 class="sub-title contact-main-title">Contact!</h3>
             <p class="contact-title-desc">(Get in touch with me!)</p>
             <p class="about--text contact-desc">
-              You can contact me faster through Twitter or Email but feel free to fill out this form below. I'll contact you as soon as possible!</p>
+              You can contact me faster through <a href="https://twitter.com/syfarifin">Twitter</a> or <a href="mailto:syariefarifin107@gmail.com">Email</a> but feel free to fill out this form below. I'll contact you as soon as possible!</p>
 
               <form class="contact-form" action="">
                 <div class="contact-form--box">
