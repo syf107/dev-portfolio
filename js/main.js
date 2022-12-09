@@ -63,8 +63,12 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
   const txtElement = document.querySelector(".txt-type");
-  const words = JSON.parse(txtElement.getAttribute("data-words"));
-  const wait = txtElement.getAttribute("data-wait");
+  const words = [
+    "Freelance Web Developer",
+    "Front-End Engineer.",
+    "Shopify Theme Developer.",
+  ];
+  const wait = 3000;
 
   //   Init TypeWriter
   new TypeWriter(txtElement, words, wait);
@@ -86,3 +90,18 @@ allNavLinkEl.forEach((a) =>
     headerEl.classList.remove("nav-open");
   })
 );
+
+// show and hide when scrolling effect.
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenContents = document.querySelectorAll(".hidden");
+hiddenContents.forEach((content) => observer.observe(content));
