@@ -437,16 +437,13 @@ body {
   padding: 2rem 2.4rem;
   margin: 0 auto 6rem auto;
   transition: ease-in all 0.3s;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: #fcc419 15px 10px 0 0;
+  transform: translate(-15px, -10px);
 }
 
-.project:hover,
-.contact-form:hover {
-  border: 10px solid #fcc419;
-  box-shadow: rgb(252, 196, 25, 0.4) 5px 5px, rgb(252, 196, 25, 0.3) 10px 10px,
-    rgb(252, 196, 25, 0.2) 15px 15px, rgb(252, 196, 25, 0.1) 20px 20px,
-    rgb(252, 196, 25, 0.05) 25px 25px;
+.project:hover {
+  box-shadow: #fcc419 0 0 0 0;
+  transform: translate(15px, 10px);
 }
 
 .project-title {
